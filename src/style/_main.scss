@@ -3,17 +3,17 @@ main {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  border: $border-size solid $border-color;
+  border: $all-border-style;
   border-radius: $border-radius-base;
   padding: $header-padding-y 0;
   margin-top: 100px;
+
   section {
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: $gray;
 
     > span:first-of-type,
     > label {
@@ -28,24 +28,9 @@ main {
       width: 100%;
       background-color: transparent;
       border-color: transparent;
-      border-bottom: $border-size solid $border-color;
+      border-bottom: $all-border-style;
     }
 
-    > button:first-of-type {
-      @include but-variant(
-        $primary-color,
-        transparent,
-        $primary-color,
-        $main-btn-width
-      );
-    }
-    > button:last-of-type {
-      @include but-variant(
-        $white,
-        $primary-color,
-        transparent,
-        $main-btn-width
-      );
-    }
+    @extend .main-btn-style;
   }
 }

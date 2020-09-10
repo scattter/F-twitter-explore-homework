@@ -18,6 +18,7 @@ $link-hover-color: darken($link-color, 15%) !default;
 $border-color: rgb(61, 84, 102);
 
 $border-size: 1px;
+$all-border-style: $border-size solid $border-color;
 $header-padding-x: 20px;
 $header-padding-y: 20px;
 

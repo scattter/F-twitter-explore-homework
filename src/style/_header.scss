@@ -1,28 +1,11 @@
 header {
   display: flex;
   justify-content: space-between;
-
-  border-bottom: $border-size solid $border-color;
-
+  border-bottom: $all-border-style;
   padding: $header-padding-x $header-padding-y;
+
   nav {
     display: flex;
-
-    > button:first-of-type {
-      @include but-variant(
-        $primary-color,
-        transparent,
-        $primary-color,
-        $head-btn-width
-      );
-    }
-    > button:last-of-type {
-      @include but-variant(
-        $white,
-        $primary-color,
-        transparent,
-        $head-btn-width
-      );
-    }
+    @extend .header-btn-style;
   }
 }

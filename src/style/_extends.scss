@@ -1,0 +1,27 @@
+.main-btn-style {
+  > button:first-of-type {
+    @include but-variant(
+      $primary-color,
+      transparent,
+      $primary-color,
+      $main-btn-width
+    );
+  }
+  > button:last-of-type {
+    @include but-variant($white, $primary-color, transparent, $main-btn-width);
+  }
+}
+
+.header-btn-style {
+  > button:first-of-type {
+    @include but-variant(
+      $primary-color,
+      transparent,
+      $primary-color,
+      $head-btn-width
+    );
+  }
+  > button:last-of-type {
+    @include but-variant($white, $primary-color, transparent, $head-btn-width);
+  }
+}
