@@ -1,0 +1,9 @@
+main {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: $border-size solid $border-color;
+  border-radius: $border-radius-base;
+}
