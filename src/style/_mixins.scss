@@ -2,3 +2,11 @@
   margin-top: 0;
   font-size: $font-size;
 }
+@mixin but-variant($color, $bg-color, $border-coo, $btn-width) {
+  width: $btn-width;
+  margin: 10px 5px;
+  color: $color;
+  background-color: $bg-color;
+  border-radius: $btn-border-radius;
+  border: $border-size solid $border-coo;
+}
