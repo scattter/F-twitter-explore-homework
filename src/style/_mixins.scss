@@ -4,6 +4,7 @@
 }
 @mixin but-variant($color, $bg-color, $border-coo, $btn-width) {
   width: $btn-width;
+  outline: none;
   margin: 10px 5px;
   color: $color;
   background-color: $bg-color;
