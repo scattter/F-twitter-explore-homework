@@ -1,3 +1,5 @@
+//TODO feedback 对继承的使用场景理解错误。你可以理解为继承是一个公共的class,被其他class使用。而不是在继承的class里面来对html元素添加样式。
+// 可以下去查一下SASS的继承的使用场景
 .main-btn-style {
   > button {
     &:first-of-type {

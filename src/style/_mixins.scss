@@ -2,6 +2,7 @@
   margin-top: 0;
   font-size: $font-size;
 }
+//TODO feedback but-variant -> btn-variant/button-variant
 @mixin but-variant($color, $bg-color, $border-coo, $btn-width) {
   width: $btn-width;
   outline: none;
